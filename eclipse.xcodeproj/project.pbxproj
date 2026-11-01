@@ -28,7 +28,6 @@
 		22706903309728B000109AED /* eclipseUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F5309728AF00109AED /* eclipseUnicode.h */; };
 		22706904309728B000109AED /* eclipseShm.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F6309728AF00109AED /* eclipseShm.h */; };
 		22706905309728B000109AED /* eclipseOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F7309728AF00109AED /* eclipseOS.h */; };
-		22706906309728B000109AED /* eclipseNix.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068F8309728AF00109AED /* eclipseNix.c */; };
 		22706907309728B000109AED /* eclipseUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F9309728AF00109AED /* eclipseUtil.h */; };
 		22706908309728B000109AED /* eclipseConfig.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068FA309728AF00109AED /* eclipseConfig.c */; };
 		22706909309728B000109AED /* eclipseJNI.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068FB309728AF00109AED /* eclipseJNI.h */; };
@@ -105,7 +104,6 @@
 		227068F5309728AF00109AED /* eclipseUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eclipseUnicode.h; path = ../equinox/features/org.eclipse.equinox.executable.feature/library/eclipseUnicode.h; sourceTree = "<group>"; };
 		227068F6309728AF00109AED /* eclipseShm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eclipseShm.h; path = ../equinox/features/org.eclipse.equinox.executable.feature/library/eclipseShm.h; sourceTree = "<group>"; };
 		227068F7309728AF00109AED /* eclipseOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eclipseOS.h; path = ../equinox/features/org.eclipse.equinox.executable.feature/library/eclipseOS.h; sourceTree = "<group>"; };
-		227068F8309728AF00109AED /* eclipseNix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = eclipseNix.c; path = ../equinox/features/org.eclipse.equinox.executable.feature/library/eclipseNix.c; sourceTree = "<group>"; };
 		227068F9309728AF00109AED /* eclipseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eclipseUtil.h; path = ../equinox/features/org.eclipse.equinox.executable.feature/library/eclipseUtil.h; sourceTree = "<group>"; };
 		227068FA309728AF00109AED /* eclipseConfig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = eclipseConfig.c; path = ../equinox/features/org.eclipse.equinox.executable.feature/library/eclipseConfig.c; sourceTree = "<group>"; };
 		227068FB309728AF00109AED /* eclipseJNI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eclipseJNI.h; path = ../equinox/features/org.eclipse.equinox.executable.feature/library/eclipseJNI.h; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 				227068F1309728AF00109AED /* eclipseConfig.h */,
 				227068EF309728AF00109AED /* eclipseJNI.c */,
 				227068FB309728AF00109AED /* eclipseJNI.h */,
-				227068F8309728AF00109AED /* eclipseNix.c */,
 				227068F7309728AF00109AED /* eclipseOS.h */,
 				227068F0309728AF00109AED /* eclipseShm.c */,
 				227068F6309728AF00109AED /* eclipseShm.h */,
@@ -451,7 +448,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				227068EC3097284000109AED /* eclipseCocoaCommon.c in Sources */,
-				22706906309728B000109AED /* eclipseNix.c in Sources */,
 				227068FD309728B000109AED /* eclipseJNI.c in Sources */,
 				22706901309728B000109AED /* eclipseCommon.c in Sources */,
 				22706902309728B000109AED /* eclipse.c in Sources */,
