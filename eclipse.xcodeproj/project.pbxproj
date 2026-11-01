@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2270689D3096A30700109AED /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270689C3096A30700109AED /* main.c */; };
+		227068AB3097259B00109AED /* eclipseCocoa.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068A73097259A00109AED /* eclipseCocoa.c */; };
+		227068AC3097259B00109AED /* eclipseCocoaCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068A83097259A00109AED /* eclipseCocoaCommon.c */; };
+		227068AD3097259B00109AED /* eclipseCocoaMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068A93097259A00109AED /* eclipseCocoaMain.c */; };
+		227068AE3097259B00109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068AA3097259A00109AED /* eclipseMain.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,22 @@
 /* Begin PBXFileReference section */
 		227068993096A30700109AED /* eclipse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = eclipse; sourceTree = BUILT_PRODUCTS_DIR; };
 		2270689C3096A30700109AED /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		227068A73097259A00109AED /* eclipseCocoa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = eclipseCocoa.c; path = ../../equinox/features/org.eclipse.equinox.executable.feature/library/cocoa/eclipseCocoa.c; sourceTree = "<group>"; };
+		227068A83097259A00109AED /* eclipseCocoaCommon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = eclipseCocoaCommon.c; path = ../../equinox/features/org.eclipse.equinox.executable.feature/library/cocoa/eclipseCocoaCommon.c; sourceTree = "<group>"; };
+		227068A93097259A00109AED /* eclipseCocoaMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = eclipseCocoaMain.c; path = ../../equinox/features/org.eclipse.equinox.executable.feature/library/cocoa/eclipseCocoaMain.c; sourceTree = "<group>"; };
+		227068AA3097259A00109AED /* eclipseMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = eclipseMain.c; path = ../../equinox/features/org.eclipse.equinox.executable.feature/library/cocoa/eclipseMain.c; sourceTree = "<group>"; };
+		227068B33097262C00109AED /* liblibeclipse.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibeclipse.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		227068963096A30700109AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		227068B13097262C00109AED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +57,7 @@
 		227068903096A30700109AED = {
 			isa = PBXGroup;
 			children = (
+				227068A53097254600109AED /* library */,
 				2270689B3096A30700109AED /* eclipse */,
 				2270689A3096A30700109AED /* Products */,
 			);
@@ -50,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				227068993096A30700109AED /* eclipse */,
+				227068B33097262C00109AED /* liblibeclipse.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +80,36 @@
 			path = eclipse;
 			sourceTree = "<group>";
 		};
+		227068A53097254600109AED /* library */ = {
+			isa = PBXGroup;
+			children = (
+				227068A63097255300109AED /* cocoa */,
+			);
+			name = library;
+			sourceTree = "<group>";
+		};
+		227068A63097255300109AED /* cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				227068A73097259A00109AED /* eclipseCocoa.c */,
+				227068A83097259A00109AED /* eclipseCocoaCommon.c */,
+				227068A93097259A00109AED /* eclipseCocoaMain.c */,
+				227068AA3097259A00109AED /* eclipseMain.c */,
+			);
+			path = cocoa;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		227068AF3097262C00109AED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		227068983096A30700109AED /* eclipse */ = {
@@ -82,6 +129,23 @@
 			productReference = 227068993096A30700109AED /* eclipse */;
 			productType = "com.apple.product-type.tool";
 		};
+		227068B23097262C00109AED /* libeclipse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 227068B43097262C00109AED /* Build configuration list for PBXNativeTarget "libeclipse" */;
+			buildPhases = (
+				227068AF3097262C00109AED /* Headers */,
+				227068B03097262C00109AED /* Sources */,
+				227068B13097262C00109AED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libeclipse;
+			productName = libeclipse;
+			productReference = 227068B33097262C00109AED /* liblibeclipse.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +156,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					227068983096A30700109AED = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					227068B23097262C00109AED = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
@@ -110,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				227068983096A30700109AED /* eclipse */,
+				227068B23097262C00109AED /* libeclipse */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +188,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2270689D3096A30700109AED /* main.c in Sources */,
+				227068AB3097259B00109AED /* eclipseCocoa.c in Sources */,
+				227068AD3097259B00109AED /* eclipseCocoaMain.c in Sources */,
+				227068AC3097259B00109AED /* eclipseCocoaCommon.c in Sources */,
+				227068AE3097259B00109AED /* eclipseMain.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		227068B03097262C00109AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +330,30 @@
 			};
 			name = Release;
 		};
+		227068B53097262C00109AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		227068B63097262C00109AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +371,15 @@
 			buildConfigurations = (
 				227068A13096A30700109AED /* Debug */,
 				227068A23096A30700109AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		227068B43097262C00109AED /* Build configuration list for PBXNativeTarget "libeclipse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				227068B53097262C00109AED /* Debug */,
+				227068B63097262C00109AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
