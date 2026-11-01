@@ -16,15 +16,15 @@
 		227068D43097275200109AED /* appeclipseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068D33097275200109AED /* appeclipseTests.m */; };
 		227068DE3097275200109AED /* appeclipseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068DD3097275200109AED /* appeclipseUITests.m */; };
 		227068E03097275200109AED /* appeclipseUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068DF3097275200109AED /* appeclipseUITestsLaunchTests.m */; };
-		227068EC3097284000109AED /* eclipseCocoaCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068EA3097284000109AED /* eclipseCocoaCommon.c */; };
-		227068ED3097284000109AED /* eclipseCocoa.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068EB3097284000109AED /* eclipseCocoa.c */; };
+		227068EC3097284000109AED /* eclipseCocoaCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068EA3097284000109AED /* eclipseCocoaCommon.c */; settings = {COMPILER_FLAGS = "-xobjective-c"; }; };
+		227068ED3097284000109AED /* eclipseCocoa.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068EB3097284000109AED /* eclipseCocoa.c */; settings = {COMPILER_FLAGS = "-xobjective-c"; }; };
 		227068FC309728AF00109AED /* eclipseCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068EE309728AF00109AED /* eclipseCommon.h */; };
 		227068FD309728B000109AED /* eclipseJNI.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068EF309728AF00109AED /* eclipseJNI.c */; };
 		227068FE309728B000109AED /* eclipseShm.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068F0309728AF00109AED /* eclipseShm.c */; };
 		227068FF309728B000109AED /* eclipseConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F1309728AF00109AED /* eclipseConfig.h */; };
 		22706900309728B000109AED /* eclipseUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068F2309728AF00109AED /* eclipseUtil.c */; };
 		22706901309728B000109AED /* eclipseCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068F3309728AF00109AED /* eclipseCommon.c */; };
-		22706902309728B000109AED /* eclipse.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068F4309728AF00109AED /* eclipse.c */; };
+		22706902309728B000109AED /* eclipse.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068F4309728AF00109AED /* eclipse.c */; settings = {COMPILER_FLAGS = "-xobjective-c"; }; };
 		22706903309728B000109AED /* eclipseUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F5309728AF00109AED /* eclipseUnicode.h */; };
 		22706904309728B000109AED /* eclipseShm.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F6309728AF00109AED /* eclipseShm.h */; };
 		22706905309728B000109AED /* eclipseOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068F7309728AF00109AED /* eclipseOS.h */; };
@@ -558,6 +558,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -565,8 +566,12 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEFAULT_OS=\"\\\"macosx\\\"\"",
+					"DEFAULT_OS_ARCH=\"\\\"x86_64\\\"\"",
+					"DEFAULT_WS=\"\\\"cocoa\\\"\"",
+					MACOSX,
+					COCOA,
 					"DEBUG=1",
-					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -621,6 +626,13 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEFAULT_OS=\"\\\"macosx\\\"\"",
+					"DEFAULT_OS_ARCH=\"\\\"x86_64\\\"\"",
+					"DEFAULT_WS=\"\\\"cocoa\\\"\"",
+					MACOSX,
+					COCOA,
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -654,6 +666,7 @@
 		227068B53097262C00109AED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -670,6 +683,7 @@
 		227068B63097262C00109AED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
