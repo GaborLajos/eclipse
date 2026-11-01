@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2270689D3096A30700109AED /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270689C3096A30700109AED /* main.c */; };
 		227068BF3097275000109AED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068BE3097275000109AED /* AppDelegate.m */; };
 		227068C23097275000109AED /* appeclipse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 227068C03097275000109AED /* appeclipse.xcdatamodeld */; };
 		227068C43097275200109AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227068C33097275200109AED /* Assets.xcassets */; };
 		227068C73097275200109AED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227068C53097275200109AED /* MainMenu.xib */; };
-		227068C93097275200109AED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068C83097275200109AED /* main.m */; };
 		227068D43097275200109AED /* appeclipseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068D33097275200109AED /* appeclipseTests.m */; };
 		227068DE3097275200109AED /* appeclipseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068DD3097275200109AED /* appeclipseUITests.m */; };
 		227068E03097275200109AED /* appeclipseUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068DF3097275200109AED /* appeclipseUITestsLaunchTests.m */; };
@@ -32,11 +30,11 @@
 		22706908309728B000109AED /* eclipseConfig.c in Sources */ = {isa = PBXBuildFile; fileRef = 227068FA309728AF00109AED /* eclipseConfig.c */; };
 		22706909309728B000109AED /* eclipseJNI.h in Headers */ = {isa = PBXBuildFile; fileRef = 227068FB309728AF00109AED /* eclipseJNI.h */; };
 		2270690C3097290500109AED /* eclipseCocoaMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690A3097290500109AED /* eclipseCocoaMain.c */; settings = {COMPILER_FLAGS = "-xobjective-c"; }; };
-		2270690D3097290500109AED /* eclipseCocoaMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690A3097290500109AED /* eclipseCocoaMain.c */; };
-		2270690E3097290500109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
-		2270690F3097290500109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
-		227069113097292700109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 227069103097292700109AED /* eclipseMain.c */; };
-		227069123097292700109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 227069103097292700109AED /* eclipseMain.c */; };
+		2270690D3097290500109AED /* eclipseCocoaMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690A3097290500109AED /* eclipseCocoaMain.c */; settings = {COMPILER_FLAGS = "-xobjective-c"; }; };
+		22706916309736BD00109AED /* eclipse_0001.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 227068B33097262C00109AED /* eclipse_0001.so */; };
+		22706917309736C600109AED /* eclipse_0001.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 227068B33097262C00109AED /* eclipse_0001.so */; };
+		22706918309737BD00109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
+		22706919309737E400109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +76,7 @@
 /* Begin PBXFileReference section */
 		227068993096A30700109AED /* eclipse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = eclipse; sourceTree = BUILT_PRODUCTS_DIR; };
 		2270689C3096A30700109AED /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		227068B33097262C00109AED /* liblibeclipse.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibeclipse.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		227068B33097262C00109AED /* eclipse_0001.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = eclipse_0001.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		227068BB3097275000109AED /* appeclipse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appeclipse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227068BD3097275000109AED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		227068BE3097275000109AED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22706916309736BD00109AED /* eclipse_0001.so in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22706917309736C600109AED /* eclipse_0001.so in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +160,7 @@
 				227068D23097275200109AED /* appeclipseTests */,
 				227068DC3097275200109AED /* appeclipseUITests */,
 				2270689A3096A30700109AED /* Products */,
+				22706915309736BD00109AED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				227068993096A30700109AED /* eclipse */,
-				227068B33097262C00109AED /* liblibeclipse.dylib */,
+				227068B33097262C00109AED /* eclipse_0001.so */,
 				227068BB3097275000109AED /* appeclipse.app */,
 				227068CF3097275200109AED /* appeclipseTests.xctest */,
 				227068D93097275200109AED /* appeclipseUITests.xctest */,
@@ -247,6 +248,13 @@
 			path = appeclipseUITests;
 			sourceTree = "<group>";
 		};
+		22706915309736BD00109AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -299,7 +307,7 @@
 			);
 			name = libeclipse;
 			productName = libeclipse;
-			productReference = 227068B33097262C00109AED /* liblibeclipse.dylib */;
+			productReference = 227068B33097262C00109AED /* eclipse_0001.so */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		227068BA3097275000109AED /* appeclipse */ = {
@@ -436,10 +444,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227069113097292700109AED /* eclipseMain.c in Sources */,
+				22706918309737BD00109AED /* eclipseMain.c in Sources */,
 				2270690C3097290500109AED /* eclipseCocoaMain.c in Sources */,
-				2270689D3096A30700109AED /* main.c in Sources */,
-				2270690E3097290500109AED /* eclipseMain.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,12 +468,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22706919309737E400109AED /* eclipseMain.c in Sources */,
 				227068BF3097275000109AED /* AppDelegate.m in Sources */,
-				227068C93097275200109AED /* main.m in Sources */,
-				227069123097292700109AED /* eclipseMain.c in Sources */,
 				2270690D3097290500109AED /* eclipseCocoaMain.c in Sources */,
 				227068C23097275000109AED /* appeclipse.xcdatamodeld in Sources */,
-				2270690F3097290500109AED /* eclipseMain.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,12 +670,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = "";
 				HEADER_SEARCH_PATHS = (
 					"$(JAVA_HOME)/include/darwin",
 					"$(JAVA_HOME)/include",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = eclipse_0001;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -683,12 +688,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = "";
 				HEADER_SEARCH_PATHS = (
 					"$(JAVA_HOME)/include/darwin",
 					"$(JAVA_HOME)/include",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = eclipse_0001;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
