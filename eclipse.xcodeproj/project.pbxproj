@@ -55,6 +55,13 @@
 			remoteGlobalIDString = 227068BA3097275000109AED;
 			remoteInfo = appeclipse;
 		};
+		2270691330972A8500109AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227068913096A30700109AED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 227068B23097262C00109AED;
+			remoteInfo = libeclipse;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -274,6 +281,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2270691430972A8500109AED /* PBXTargetDependency */,
 			);
 			name = eclipse;
 			productName = eclipse;
@@ -497,6 +505,11 @@
 			target = 227068BA3097275000109AED /* appeclipse */;
 			targetProxy = 227068DA3097275200109AED /* PBXContainerItemProxy */;
 		};
+		2270691430972A8500109AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 227068B23097262C00109AED /* libeclipse */;
+			targetProxy = 2270691330972A8500109AED /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -561,6 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				JAVA_HOME = "/Library/Java/JavaVirtualMachines/jdk-26.jdk/Contents/Home\n";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -613,6 +627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				JAVA_HOME = "/Library/Java/JavaVirtualMachines/jdk-26.jdk/Contents/Home\n";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -643,6 +658,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(JAVA_HOME)/include/darwin",
+					"$(JAVA_HOME)/include",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -655,6 +674,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(JAVA_HOME)/include/darwin",
+					"$(JAVA_HOME)/include",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
