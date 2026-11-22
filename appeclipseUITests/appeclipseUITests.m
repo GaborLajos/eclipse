@@ -7,40 +7,90 @@
 
 #import <XCTest/XCTest.h>
 
-@interface appeclipseUITests : XCTestCase
+#include "eclipseCommon.h"
 
+#include <limits.h>
+#include <stdlib.h>
+
+@interface ResolveSymlinksTests : XCTestCase
+@property(nonatomic, strong) NSURL *temporaryDirectory;
 @end
 
-@implementation appeclipseUITests
+@implementation ResolveSymlinksTests
 
-- (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)setUp
+{
+  [super setUp];
 
-    // In UI tests it is usually best to stop immediately when a failure occurs.
-    self.continueAfterFailure = NO;
+  NSString *directoryName = [NSString stringWithFormat:@"resolveSymlinks-%@", NSUUID.UUID.UUIDString];
+  self.temporaryDirectory = [[NSURL fileURLWithPath:NSTemporaryDirectory() isDirectory:YES]
+      URLByAppendingPathComponent:directoryName isDirectory:YES];
 
-    // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+  NSError *error = nil;
+  BOOL created = [[NSFileManager defaultManager] createDirectoryAtURL:self.temporaryDirectory
+      withIntermediateDirectories:YES attributes:nil error:&error];
+  XCTAssertTrue(created, @"Could not create temporary directory: %@", error);
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown
+{
+  NSError *error = nil;
+  [[NSFileManager defaultManager] removeItemAtURL:self.temporaryDirectory error:&error];
+  XCTAssertNil(error, @"Could not remove temporary directory: %@", error);
+
+  [super tearDown];
 }
 
-- (void)testExample {
-    // UI tests must launch the application that they test.
-    XCUIApplication *app = [[XCUIApplication alloc] init];
-    [app launch];
-
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testNullPathReturnsNull
+{
+  XCTAssert(resolveSymlinks(NULL) == NULL);
 }
 
-- (void)testLaunchPerformance {
-    if (@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *)) {
-        // This measures how long it takes to launch your application.
-        [self measureWithMetrics:@[[[XCTApplicationLaunchMetric alloc] init]] block:^{
-            [[[XCUIApplication alloc] init] launch];
-        }];
+- (void)testRegularFilePathIsReturned
+{
+  NSURL *fileURL = [self.temporaryDirectory URLByAppendingPathComponent:@"target.txt"];
+  NSError *error = nil;
+  BOOL written = [@"test" writeToURL:fileURL atomically:YES encoding:NSUTF8StringEncoding error:&error];
+  XCTAssertTrue(written, @"Could not create test file: %@", error);
+
+  char *inputPath = (char *)fileURL.fileSystemRepresentation;
+  char *resolvedPath = resolveSymlinks(inputPath);
+
+  XCTAssertNotEqual(resolvedPath, NULL);
+  if (resolvedPath != NULL) {
+    XCTAssertEqualObjects([NSString stringWithUTF8String:resolvedPath], fileURL.path);
+    if (resolvedPath != inputPath) {
+      free(resolvedPath);
     }
+  }
+}
+
+- (void)testSymbolicLinkResolvesToTarget
+{
+  NSURL *targetURL = [self.temporaryDirectory URLByAppendingPathComponent:@"target.txt"];
+  NSError *error = nil;
+  BOOL written = [@"test" writeToURL:targetURL atomically:YES encoding:NSUTF8StringEncoding error:&error];
+  XCTAssertTrue(written, @"Could not create target file: %@", error);
+
+  NSURL *linkURL = [self.temporaryDirectory URLByAppendingPathComponent:@"link.txt"];
+  BOOL linked = [[NSFileManager defaultManager] createSymbolicLinkAtURL:linkURL
+      withDestinationURL:targetURL error:&error];
+  XCTAssertTrue(linked, @"Could not create symbolic link: %@", error);
+
+  char expectedPath[PATH_MAX];
+  XCTAssertNotEqual(realpath(targetURL.fileSystemRepresentation, expectedPath), NULL);
+
+  char *inputPath = (char *)linkURL.fileSystemRepresentation;
+  char *resolvedPath = resolveSymlinks(inputPath);
+
+  XCTAssertNotEqual(resolvedPath, NULL);
+  if (resolvedPath != NULL) {
+    XCTAssertEqualObjects([NSString stringWithUTF8String:resolvedPath],
+        [NSString stringWithUTF8String:expectedPath]);
+    if (resolvedPath != inputPath) {
+      free(resolvedPath);
+    }
+  }
 }
 
 @end
