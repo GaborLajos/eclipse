@@ -52,6 +52,22 @@
 		22F0F99A30B36B490028CE71 /* startuptester.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F0F99930B36B490028CE71 /* startuptester.jar */; };
 		22F0F99B30B36B490028CE71 /* startuptester.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F0F99930B36B490028CE71 /* startuptester.jar */; };
 		22F0F99C30B36B5F0028CE71 /* startuptester.jar in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22F0F99930B36B490028CE71 /* startuptester.jar */; };
+		22F0F9AC30B38F7E0028CE71 /* eclipse.ini in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F99F30B38F7E0028CE71 /* eclipse.ini */; };
+		22F0F9AD30B38F7E0028CE71 /* eclipse.ini in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F99F30B38F7E0028CE71 /* eclipse.ini */; };
+		22F0F9AE30B38F7E0028CE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A230B38F7E0028CE71 /* Assets.xcassets */; };
+		22F0F9AF30B38F7E0028CE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A230B38F7E0028CE71 /* Assets.xcassets */; };
+		22F0F9B030B38F7E0028CE71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A330B38F7E0028CE71 /* MainMenu.xib */; };
+		22F0F9B130B38F7E0028CE71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A330B38F7E0028CE71 /* MainMenu.xib */; };
+		22F0F9B230B38F7E0028CE71 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A530B38F7E0028CE71 /* main.c */; };
+		22F0F9B330B38F7E0028CE71 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A530B38F7E0028CE71 /* main.c */; };
+		22F0F9B430B38F7E0028CE71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A630B38F7E0028CE71 /* main.m */; };
+		22F0F9B530B38F7E0028CE71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A630B38F7E0028CE71 /* main.m */; };
+		22F0F9B630B38F7E0028CE71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A830B38F7E0028CE71 /* AppDelegate.m */; };
+		22F0F9B730B38F7E0028CE71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A830B38F7E0028CE71 /* AppDelegate.m */; };
+		22F0F9B830B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A930B38F7E0028CE71 /* Eclipse.xcdatamodeld */; };
+		22F0F9B930B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A930B38F7E0028CE71 /* Eclipse.xcdatamodeld */; };
+		22F0F9BA30B38F7E0028CE71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9AB30B38F7E0028CE71 /* Info.plist */; };
+		22F0F9BB30B38F7E0028CE71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9AB30B38F7E0028CE71 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +234,18 @@
 		22D5B06530B10C77002C5654 /* EclipseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EclipseUITests.m; sourceTree = "<group>"; };
 		22D5B06730B10C77002C5654 /* EclipseUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EclipseUITestsLaunchTests.m; sourceTree = "<group>"; };
 		22F0F99930B36B490028CE71 /* startuptester.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = startuptester.jar; sourceTree = SOURCE_ROOT; };
+		22F0F99D30B38C320028CE71 /* EclipseDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EclipseDebug.entitlements; sourceTree = "<group>"; };
+		22F0F99F30B38F7E0028CE71 /* eclipse.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eclipse.ini; sourceTree = "<group>"; };
+		22F0F9A030B38F7E0028CE71 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22F0F9A130B38F7E0028CE71 /* EclipseDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = EclipseDebug.entitlements; sourceTree = "<group>"; };
+		22F0F9A230B38F7E0028CE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22F0F9A430B38F7E0028CE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		22F0F9A530B38F7E0028CE71 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		22F0F9A630B38F7E0028CE71 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22F0F9A730B38F7E0028CE71 /* Eclipse.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Eclipse.entitlements; sourceTree = "<group>"; };
+		22F0F9A830B38F7E0028CE71 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22F0F9AA30B38F7E0028CE71 /* Eclipse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eclipse.xcdatamodel; sourceTree = "<group>"; };
+		22F0F9AB30B38F7E0028CE71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +430,8 @@
 		22D5B04430B10C75002C5654 /* Eclipse */ = {
 			isa = PBXGroup;
 			children = (
+				22F0F99D30B38C320028CE71 /* EclipseDebug.entitlements */,
+				22F0F99E30B38F7E0028CE71 /* eclipse */,
 				22BB56B930B1BE0400697158 /* Info.plist */,
 				22D5B04530B10C75002C5654 /* AppDelegate.h */,
 				22D5B04630B10C75002C5654 /* AppDelegate.m */,
@@ -430,6 +460,24 @@
 			);
 			path = EclipseUITests;
 			sourceTree = "<group>";
+		};
+		22F0F99E30B38F7E0028CE71 /* eclipse */ = {
+			isa = PBXGroup;
+			children = (
+				22F0F99F30B38F7E0028CE71 /* eclipse.ini */,
+				22F0F9A030B38F7E0028CE71 /* AppDelegate.h */,
+				22F0F9A130B38F7E0028CE71 /* EclipseDebug.entitlements */,
+				22F0F9A230B38F7E0028CE71 /* Assets.xcassets */,
+				22F0F9A330B38F7E0028CE71 /* MainMenu.xib */,
+				22F0F9A530B38F7E0028CE71 /* main.c */,
+				22F0F9A630B38F7E0028CE71 /* main.m */,
+				22F0F9A730B38F7E0028CE71 /* Eclipse.entitlements */,
+				22F0F9A830B38F7E0028CE71 /* AppDelegate.m */,
+				22F0F9A930B38F7E0028CE71 /* Eclipse.xcdatamodeld */,
+				22F0F9AB30B38F7E0028CE71 /* Info.plist */,
+			);
+			path = eclipse;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -668,10 +716,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F0F9BA30B38F7E0028CE71 /* Info.plist in Resources */,
 				226952DB30AAB5CB0022EA17 /* Eclipse.app in Resources */,
 				227068C43097275200109AED /* Assets.xcassets in Resources */,
 				22BB56BF30B237B200697158 /* eclipse.ini in Resources */,
 				227068C73097275200109AED /* MainMenu.xib in Resources */,
+				22F0F9AE30B38F7E0028CE71 /* Assets.xcassets in Resources */,
+				22F0F9B030B38F7E0028CE71 /* MainMenu.xib in Resources */,
+				22F0F9AC30B38F7E0028CE71 /* eclipse.ini in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +747,11 @@
 			files = (
 				22D5B04C30B10C76002C5654 /* Assets.xcassets in Resources */,
 				22BB56C030B237B200697158 /* eclipse.ini in Resources */,
+				22F0F9AD30B38F7E0028CE71 /* eclipse.ini in Resources */,
 				22D5B04F30B10C76002C5654 /* MainMenu.xib in Resources */,
+				22F0F9AF30B38F7E0028CE71 /* Assets.xcassets in Resources */,
+				22F0F9B130B38F7E0028CE71 /* MainMenu.xib in Resources */,
+				22F0F9BB30B38F7E0028CE71 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,10 +800,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F0F9B230B38F7E0028CE71 /* main.c in Sources */,
+				22F0F9B830B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */,
 				22706919309737E400109AED /* eclipseMain.c in Sources */,
 				227068BF3097275000109AED /* AppDelegate.m in Sources */,
 				2270690D3097290500109AED /* eclipseCocoaMain.c in Sources */,
+				22F0F9B430B38F7E0028CE71 /* main.m in Sources */,
 				227068C23097275000109AED /* appeclipse.xcdatamodeld in Sources */,
+				22F0F9B630B38F7E0028CE71 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,6 +834,10 @@
 			files = (
 				22D5B07230B10D24002C5654 /* eclipseCocoaMain.c in Sources */,
 				22D5B07330B10D27002C5654 /* eclipseMain.c in Sources */,
+				22F0F9B530B38F7E0028CE71 /* main.m in Sources */,
+				22F0F9B330B38F7E0028CE71 /* main.c in Sources */,
+				22F0F9B730B38F7E0028CE71 /* AppDelegate.m in Sources */,
+				22F0F9B930B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +916,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				22D5B04E30B10C76002C5654 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		22F0F9A330B38F7E0028CE71 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22F0F9A430B38F7E0028CE71 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1179,7 +1251,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Eclipse/Eclipse.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Eclipse/EclipseDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1417,6 +1489,16 @@
 				22D5B04930B10C75002C5654 /* Eclipse.xcdatamodel */,
 			);
 			currentVersion = 22D5B04930B10C75002C5654 /* Eclipse.xcdatamodel */;
+			path = Eclipse.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		22F0F9A930B38F7E0028CE71 /* Eclipse.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22F0F9AA30B38F7E0028CE71 /* Eclipse.xcdatamodel */,
+			);
+			currentVersion = 22F0F9AA30B38F7E0028CE71 /* Eclipse.xcdatamodel */;
 			path = Eclipse.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
