@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		226952C830A2793A0022EA17 /* eclipse_0001.so in CopyFiles */ = {isa = PBXBuildFile; fileRef = 227068B33097262C00109AED /* eclipse_0001.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		226952DB30AAB5CB0022EA17 /* Eclipse.app in Resources */ = {isa = PBXBuildFile; fileRef = 226952DA30AAB5CB0022EA17 /* Eclipse.app */; };
-		227068BF3097275000109AED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068BE3097275000109AED /* AppDelegate.m */; };
-		227068C23097275000109AED /* appeclipse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 227068C03097275000109AED /* appeclipse.xcdatamodeld */; };
 		227068C43097275200109AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227068C33097275200109AED /* Assets.xcassets */; };
 		227068C73097275200109AED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227068C53097275200109AED /* MainMenu.xib */; };
 		227068D43097275200109AED /* appeclipseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 227068D33097275200109AED /* appeclipseTests.m */; };
@@ -38,11 +36,8 @@
 		22706918309737BD00109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
 		22706919309737E400109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
 		22BB56BF30B237B200697158 /* eclipse.ini in Resources */ = {isa = PBXBuildFile; fileRef = 22BB56BE30B237B200697158 /* eclipse.ini */; };
-		22BB56C030B237B200697158 /* eclipse.ini in Resources */ = {isa = PBXBuildFile; fileRef = 22BB56BE30B237B200697158 /* eclipse.ini */; };
 		22BB56C130B237C700697158 /* eclipse.ini in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22BB56BE30B237B200697158 /* eclipse.ini */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		22BB56C330B2402600697158 /* eclipse_0001.so in CopyFiles */ = {isa = PBXBuildFile; fileRef = 227068B33097262C00109AED /* eclipse_0001.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		22D5B04C30B10C76002C5654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D5B04B30B10C76002C5654 /* Assets.xcassets */; };
-		22D5B04F30B10C76002C5654 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D5B04D30B10C76002C5654 /* MainMenu.xib */; };
 		22D5B05C30B10C77002C5654 /* EclipseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B05B30B10C77002C5654 /* EclipseTests.m */; };
 		22D5B06630B10C77002C5654 /* EclipseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B06530B10C77002C5654 /* EclipseUITests.m */; };
 		22D5B06830B10C77002C5654 /* EclipseUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B06730B10C77002C5654 /* EclipseUITestsLaunchTests.m */; };
@@ -53,21 +48,9 @@
 		22F0F99B30B36B490028CE71 /* startuptester.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F0F99930B36B490028CE71 /* startuptester.jar */; };
 		22F0F99C30B36B5F0028CE71 /* startuptester.jar in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22F0F99930B36B490028CE71 /* startuptester.jar */; };
 		22F0F9AC30B38F7E0028CE71 /* eclipse.ini in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F99F30B38F7E0028CE71 /* eclipse.ini */; };
-		22F0F9AD30B38F7E0028CE71 /* eclipse.ini in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F99F30B38F7E0028CE71 /* eclipse.ini */; };
 		22F0F9AE30B38F7E0028CE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A230B38F7E0028CE71 /* Assets.xcassets */; };
-		22F0F9AF30B38F7E0028CE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A230B38F7E0028CE71 /* Assets.xcassets */; };
 		22F0F9B030B38F7E0028CE71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A330B38F7E0028CE71 /* MainMenu.xib */; };
-		22F0F9B130B38F7E0028CE71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A330B38F7E0028CE71 /* MainMenu.xib */; };
-		22F0F9B230B38F7E0028CE71 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A530B38F7E0028CE71 /* main.c */; };
-		22F0F9B330B38F7E0028CE71 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A530B38F7E0028CE71 /* main.c */; };
-		22F0F9B430B38F7E0028CE71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A630B38F7E0028CE71 /* main.m */; };
-		22F0F9B530B38F7E0028CE71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A630B38F7E0028CE71 /* main.m */; };
-		22F0F9B630B38F7E0028CE71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A830B38F7E0028CE71 /* AppDelegate.m */; };
-		22F0F9B730B38F7E0028CE71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A830B38F7E0028CE71 /* AppDelegate.m */; };
-		22F0F9B830B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A930B38F7E0028CE71 /* Eclipse.xcdatamodeld */; };
-		22F0F9B930B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F0F9A930B38F7E0028CE71 /* Eclipse.xcdatamodeld */; };
 		22F0F9BA30B38F7E0028CE71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9AB30B38F7E0028CE71 /* Info.plist */; };
-		22F0F9BB30B38F7E0028CE71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9AB30B38F7E0028CE71 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -745,13 +728,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D5B04C30B10C76002C5654 /* Assets.xcassets in Resources */,
-				22BB56C030B237B200697158 /* eclipse.ini in Resources */,
-				22F0F9AD30B38F7E0028CE71 /* eclipse.ini in Resources */,
-				22D5B04F30B10C76002C5654 /* MainMenu.xib in Resources */,
-				22F0F9AF30B38F7E0028CE71 /* Assets.xcassets in Resources */,
-				22F0F9B130B38F7E0028CE71 /* MainMenu.xib in Resources */,
-				22F0F9BB30B38F7E0028CE71 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,14 +776,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F0F9B230B38F7E0028CE71 /* main.c in Sources */,
-				22F0F9B830B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */,
 				22706919309737E400109AED /* eclipseMain.c in Sources */,
-				227068BF3097275000109AED /* AppDelegate.m in Sources */,
 				2270690D3097290500109AED /* eclipseCocoaMain.c in Sources */,
-				22F0F9B430B38F7E0028CE71 /* main.m in Sources */,
-				227068C23097275000109AED /* appeclipse.xcdatamodeld in Sources */,
-				22F0F9B630B38F7E0028CE71 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,10 +804,6 @@
 			files = (
 				22D5B07230B10D24002C5654 /* eclipseCocoaMain.c in Sources */,
 				22D5B07330B10D27002C5654 /* eclipseMain.c in Sources */,
-				22F0F9B530B38F7E0028CE71 /* main.m in Sources */,
-				22F0F9B330B38F7E0028CE71 /* main.c in Sources */,
-				22F0F9B730B38F7E0028CE71 /* AppDelegate.m in Sources */,
-				22F0F9B930B38F7E0028CE71 /* Eclipse.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
