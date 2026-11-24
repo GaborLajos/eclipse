@@ -36,7 +36,6 @@
 		22706918309737BD00109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
 		22706919309737E400109AED /* eclipseMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 2270690B3097290500109AED /* eclipseMain.c */; };
 		22BB56BF30B237B200697158 /* eclipse.ini in Resources */ = {isa = PBXBuildFile; fileRef = 22BB56BE30B237B200697158 /* eclipse.ini */; };
-		22BB56C130B237C700697158 /* eclipse.ini in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22BB56BE30B237B200697158 /* eclipse.ini */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		22BB56C330B2402600697158 /* eclipse_0001.so in CopyFiles */ = {isa = PBXBuildFile; fileRef = 227068B33097262C00109AED /* eclipse_0001.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		22D5B05C30B10C77002C5654 /* EclipseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B05B30B10C77002C5654 /* EclipseTests.m */; };
 		22D5B06630B10C77002C5654 /* EclipseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B06530B10C77002C5654 /* EclipseUITests.m */; };
@@ -51,6 +50,10 @@
 		22F0F9AE30B38F7E0028CE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A230B38F7E0028CE71 /* Assets.xcassets */; };
 		22F0F9B030B38F7E0028CE71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9A330B38F7E0028CE71 /* MainMenu.xib */; };
 		22F0F9BA30B38F7E0028CE71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9AB30B38F7E0028CE71 /* Info.plist */; };
+		22F0F9BE30B5FED90028CE71 /* eclipse.ini.backup in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9BD30B5FED90028CE71 /* eclipse.ini.backup */; };
+		22F0F9BF30B5FED90028CE71 /* eclipse.ini.backup in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9BD30B5FED90028CE71 /* eclipse.ini.backup */; };
+		22F0F9C130B5FEEA0028CE71 /* eclipse.ini.alias in Resources */ = {isa = PBXBuildFile; fileRef = 22F0F9C030B5FEEA0028CE71 /* eclipse.ini.alias */; };
+		22F0F9C430B5FEFC0028CE71 /* eclipse.ini.backup in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22F0F9BD30B5FED90028CE71 /* eclipse.ini.backup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,7 +141,7 @@
 			dstPath = Contents/Eclipse;
 			dstSubfolderSpec = 1;
 			files = (
-				22BB56C130B237C700697158 /* eclipse.ini in CopyFiles */,
+				22F0F9C430B5FEFC0028CE71 /* eclipse.ini.backup in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +232,8 @@
 		22F0F9A830B38F7E0028CE71 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22F0F9AA30B38F7E0028CE71 /* Eclipse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eclipse.xcdatamodel; sourceTree = "<group>"; };
 		22F0F9AB30B38F7E0028CE71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F0F9BD30B5FED90028CE71 /* eclipse.ini.backup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eclipse.ini.backup; sourceTree = "<group>"; };
+		22F0F9C030B5FEEA0028CE71 /* eclipse.ini.alias */ = {isa = PBXFileReference; lastKnownFileType = file; path = eclipse.ini.alias; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +304,8 @@
 		227068903096A30700109AED = {
 			isa = PBXGroup;
 			children = (
+				22F0F9C030B5FEEA0028CE71 /* eclipse.ini.alias */,
+				22F0F9BD30B5FED90028CE71 /* eclipse.ini.backup */,
 				22F0F99930B36B490028CE71 /* startuptester.jar */,
 				22BB56BE30B237B200697158 /* eclipse.ini */,
 				226952DA30AAB5CB0022EA17 /* Eclipse.app */,
@@ -583,6 +590,7 @@
 				22D5B03F30B10C75002C5654 /* Sources */,
 				22D5B04030B10C75002C5654 /* Frameworks */,
 				22D5B04130B10C75002C5654 /* Resources */,
+				22F0F9C530B5FF390028CE71 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -699,6 +707,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F0F9C130B5FEEA0028CE71 /* eclipse.ini.alias in Resources */,
+				22F0F9BE30B5FED90028CE71 /* eclipse.ini.backup in Resources */,
 				22F0F9BA30B38F7E0028CE71 /* Info.plist in Resources */,
 				226952DB30AAB5CB0022EA17 /* Eclipse.app in Resources */,
 				227068C43097275200109AED /* Assets.xcassets in Resources */,
@@ -728,6 +738,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F0F9BF30B5FED90028CE71 /* eclipse.ini.backup in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,6 +757,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22F0F9C530B5FF390028CE71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm ${TARGET_BUILD_DIR}/Eclipse.app/Contents/Eclipse/eclipse.ini\nln -s ${TARGET_BUILD_DIR}/Eclipse.app/Contents/Eclipse/eclipse.ini.backup ${TARGET_BUILD_DIR}/Eclipse.app/Contents/Eclipse/eclipse.ini\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		227068953096A30700109AED /* Sources */ = {
