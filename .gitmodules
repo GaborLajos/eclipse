@@ -1,0 +1,3 @@
+[submodule "equinox"]
+	path = equinox
+	url = https://github.com/GaborLajos/equinox.git
